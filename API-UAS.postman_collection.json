@@ -1,0 +1,163 @@
+{
+	"info": {
+		"_postman_id": "7384e4b8-7dad-4192-9c57-28d811fe661d",
+		"name": "API-UAS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "7478552"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "agnia",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "vinanda@jabarprov.go.id",
+							"type": "text"
+						}
+					]
+				},
+				"url": "https://api-flutter-deri.000webhostapp.com/api-v2/register.php"
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "agnia",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "text"
+						}
+					]
+				},
+				"url": "https://api-flutter-deri.000webhostapp.com/api-v2/login.php"
+			},
+			"response": []
+		},
+		{
+			"name": "Logout",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "https://api-flutter-deri.000webhostapp.com/api-v2/logout.php"
+			},
+			"response": []
+		},
+		{
+			"name": "List Mahasiswa",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://api-flutter-deri.000webhostapp.com/api-v2/list_mahasiswa.php"
+			},
+			"response": []
+		},
+		{
+			"name": "Add Mahasiswa",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nama",
+							"value": "Angga",
+							"type": "text"
+						},
+						{
+							"key": "alamat",
+							"value": "Pangandaran",
+							"type": "text"
+						},
+						{
+							"key": "umur",
+							"value": "26",
+							"type": "text"
+						}
+					]
+				},
+				"url": "https://api-flutter-deri.000webhostapp.com/api-v2/tambah_mahasiswa.php"
+			},
+			"response": []
+		},
+		{
+			"name": "Hapus Mahasiswa",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "0",
+							"type": "text"
+						}
+					]
+				},
+				"url": "https://api-flutter-deri.000webhostapp.com/api-v2/hapus_mahasiswa.php"
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Mahasiswa",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "nama",
+							"value": "Deri Vinanda Nur Ramdani EDIT",
+							"type": "text"
+						},
+						{
+							"key": "alamat",
+							"value": "Bandung Selatannya selatan",
+							"type": "text"
+						},
+						{
+							"key": "umur",
+							"value": "32",
+							"type": "text"
+						}
+					]
+				},
+				"url": "https://api-flutter-deri.000webhostapp.com/api-v2/edit_mahasiswa.php"
+			},
+			"response": []
+		}
+	]
+}
